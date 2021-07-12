@@ -17,6 +17,6 @@ COPY --chown=nginx:root nginx/nginx.conf /etc/nginx/
 COPY --chown=nginx:root nginx/default.conf /etc/nginx/conf.d/
 COPY --chown=nginx:root img /usr/share/nginx/html/img/
 COPY --chown=nginx:root css /usr/share/nginx/html/css/
-COPY --chown=nginx:root index.html /usr/share/nginx/html/
+COPY --chown=nginx:root *.html /usr/share/nginx/html/
 
 RUN chmod -R 755 /usr/share/nginx/html/
